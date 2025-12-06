@@ -37,10 +37,7 @@ def solution():
         else:
             if file_contents[-1][idx - 1] in "*+":
                 operation = file_contents[-1][idx - 1]
-            curr_num = ""
-            for line in file_contents[0:len(file_contents)-1]:
-                curr_num += line[idx]
-            num_set.append(curr_num)
+            num_set.append(curr_string)
         idx += 1
     
     print(total)
