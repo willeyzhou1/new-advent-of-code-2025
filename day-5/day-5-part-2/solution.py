@@ -2,6 +2,8 @@ def solution():
     ranges = []
     answer = []
     total = 0
+
+    # assemble list of ranges by merging if needed
     with open("file.txt") as file:
         for line in file:
             line = line.split("-")
@@ -16,9 +18,9 @@ def solution():
         else:
             answer.append(curr_range)
             curr_range = range
-    
     answer.append(curr_range)
-    print(answer)
+
+    # Add all ranges
     for num in answer:
         total += num[1] - num[0] + 1
     print(total)

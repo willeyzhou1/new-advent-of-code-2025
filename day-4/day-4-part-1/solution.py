@@ -10,6 +10,7 @@ def solution():
                     curr_row.append(char)
             input.append(curr_row)
     
+    # For each index, check all directions; if there are less than 4 @'s, increment by 1; toilet paper can be moved
     total = 0
     directions = [(-1, -1), (-1, 0), (-1, 1), (0, 1), (0, -1), (1, -1), (1, 0), (1, 1)]
     for i in range(len(input)):

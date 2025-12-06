@@ -5,6 +5,7 @@ def solution():
             number = str(line)
             l, r = 0, 1
             max_num = 0
+            # If right pointer is greater than left pointer, max number can be greater; set the left pointer equal to the right
             while r < len(number):
                 curr_num = number[l] + number[r]
                 max_num = max(int(curr_num), max_num)

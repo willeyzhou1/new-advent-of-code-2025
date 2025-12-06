@@ -10,6 +10,7 @@ def solution():
                     curr_row.append(char)
             input.append(curr_row)
     
+    # Same idea as part 1; add encapsulating while loop to make sure it keeps running until no more @'s can be removed
     total = 0
     num_rolls = 1
     directions = [(-1, -1), (-1, 0), (-1, 1), (0, 1), (0, -1), (1, -1), (1, 0), (1, 1)]

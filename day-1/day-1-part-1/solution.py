@@ -5,6 +5,7 @@ def solution():
         for line in file:
             direction = line[0]
             number = line[1:]
+            # update current number based on direction
             if direction == "L":
                 curr = (curr - int(number)) % 100
             else:

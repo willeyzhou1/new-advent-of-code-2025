@@ -1,14 +1,11 @@
-from collections import defaultdict
-
 def solution():
-    numbers = defaultdict(list)
     file_contents = []
     total = 0
     with open("file.txt") as file:
         for line in file:
             file_contents.append(line)
     
-    #stupid solution incoming
+    # stupid solution incoming (ultra hardcoded, check the other solution for explanation)
     idx = 0
     curr = 1
     num_set = []

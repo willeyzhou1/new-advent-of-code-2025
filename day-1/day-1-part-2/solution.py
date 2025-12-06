@@ -11,6 +11,8 @@ def solution():
     #         else:
     #             zeroes += abs((int(number) + curr) // 100)
     #             curr = (curr + int(number)) % 100
+
+            # manually turn the knobs one by one (i got real frustrated trying to do modulo stuff)
             while number > 0:
                 if direction == "L":
                     curr -= 1
