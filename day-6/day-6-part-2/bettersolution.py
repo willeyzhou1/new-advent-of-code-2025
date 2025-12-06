@@ -35,7 +35,7 @@ def solution():
             num_set.clear()
             curr = 1
         else:
-            if idx > 0 and file_contents[-1][idx - 1] in "*+":
+            if file_contents[-1][idx - 1] in "*+":
                 operation = file_contents[-1][idx - 1]
             curr_num = ""
             for line in file_contents[0:len(file_contents)-1]:
