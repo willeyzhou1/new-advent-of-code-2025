@@ -9,8 +9,6 @@ def calculate_distance(x1, y1, z1, x2, y2, z2):
 
 def solution():
     # parse input
-    MAX_LARGEST_CIRCUITS = 3
-    total = 1
     boxes = []
     with open("file.txt") as file:
         for line in file:
